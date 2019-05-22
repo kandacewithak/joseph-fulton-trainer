@@ -5,18 +5,87 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
-/* MAIN STYLES OF THE PAGE */
+/* BASE STYLES OF THE PAGE */
+
 body {
   font-size: 62.5%;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
-h1 {
-  font-family: 'Oswald', sans-serif;
-  padding: 0;
+h1, ul {
   margin: 0;
+  padding: 0;
 }
 
 ul {
   list-style-type: none;
 }
+
+a {
+  text-decoration: none;
+  color:white;
+}
+
+a, h1 {
+  text-transform: uppercase;
+}
+
+/* HEADER STYLES */
+
+header {
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../assets/fitness-hero.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.nav-menu a {
+  font-size: 0.8rem;
+}
+
+.nav-menu a:hover, h1 {
+  color: #FF8000;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 0.8;
+}
+
+@keyframes fadein {
+  from { opacity: 0.1}
+  to   { opacity: 1}
+}
+
+.header-headings {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  animation: fadein 2s;
+}
+
+h1 span {
+  display: block;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-left: -140px;
+  margin-top: 40px;
+}
+
+
